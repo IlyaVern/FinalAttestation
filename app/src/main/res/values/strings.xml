@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyAppVern</string>
+    <string name="helloworld">HelloWorld</string>
+    <string name="new_text">new_text</string>
 </resources>
