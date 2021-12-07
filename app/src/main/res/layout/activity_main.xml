@@ -6,47 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/greeting_container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello"
-        app:layout_constraintBottom_toTopOf="@+id/center_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/center_button"
-        android:layout_width="180sp"
-        android:layout_height="50sp"
-        android:text="center_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:menu="@menu/bottom_menu"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        style="@style/Theme.MyAppVern.Down_Button"
-        android:id="@+id/down_button"
-        android:layout_width="180sp"
-        android:layout_height="50sp"
-        android:layout_marginTop="5sp"
-        android:text="down_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/center_button" />
-
-    <Button
+        android:id="@+id/greeting_button"
         style="@style/Theme.MyAppVern.Up_Button"
-        android:id="@+id/up_button"
-        android:layout_width="180sp"
+        android:layout_width="190sp"
         android:layout_height="50sp"
-        android:layout_marginBottom="5sp"
-        android:text="up_button"
-        app:layout_constraintBottom_toTopOf="@+id/center_button"
+        android:text="greeting"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_container" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
