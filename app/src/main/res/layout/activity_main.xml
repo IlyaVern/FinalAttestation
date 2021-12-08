@@ -32,5 +32,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/greeting_container" />
 
+    <Button
+        android:id="@+id/intent_button"
+        style="@style/Theme.MyAppVern.Up_Button"
+        android:layout_width="190sp"
+        android:layout_height="50sp"
+        android:text="intent"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
